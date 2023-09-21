@@ -3,6 +3,7 @@ let numero1 = "";
 let numero2;
 let operacion;
 let primeraOperacion = false;
+
 //Aqui encontramos las variables necesarias
 function elegirNumero(numero) {
     if (operacion === null) {//Si el primer numero es nulo, le damos el valor del número que escogemos,
@@ -77,6 +78,31 @@ function hacerOperacion() {
     numero2 = null;//reiniciamos las variables para hacer bien el siguiente cálculo
     operacion = null;
     encenderCalculadora();//llamamos a la función de encender la calculadora
+}
+
+//JAVASCRIPT PARA EL FORMULARIO
+let pulsado = false;
+
+function enviar() {
+    if (!pulsado) {
+        pulsado = true;
+        document.getElementById("mensaje").classList = "enviado";
+        document.getElementById("input_nombre").value = "";
+        document.getElementById("input_apellido").value = "";
+        document.getElementById("input_fecha").value = "";
+        document.getElementById("input_opinion").value = "";
+        document.getElementById("datos").value = "";
+    }
+    else {
+        document.getElementById("mensaje").classList = "enviado";
+        document.getElementById("input_nombre").value = "";
+        document.getElementById("input_apellido").value = "";
+        document.getElementById("input_fecha").value = "";
+        document.getElementById("input_opinion").value = "";
+        document.getElementById("datos").value = "";
+        document.getElementById("mensaje").innerHTML = "¡OYE QUE YA ME HAS PULSADO!";
+    }
+    
 }
 
 //JAVASCRIPT PARA EL VIDEO
