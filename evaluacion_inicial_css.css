@@ -109,7 +109,7 @@ h5 {
 
 .footer {
     border-top: 5px black solid;
-    margin-top: 250px;
+    margin-top: 100px;
     background-color: beige;
 }
 
@@ -135,4 +135,30 @@ h5 {
 #derechos {
     margin-top: 5%;
     float: right;
+}
+
+#datos {
+    min-width: 12%;
+}
+
+.formulario {
+    height: 25%;
+    resize: none;
+    margin-top: 2px;
+}
+
+.boton_formulario {
+    margin: 5px;
+    background-color: beige;
+    border: beige 2px solid;
+}
+
+.boton_formulario:hover {
+    color: white;
+    background-color: black;
+}
+
+.enviado {
+    margin-left: 1%;
+    margin-bottom: -2%;
 }
