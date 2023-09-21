@@ -29,7 +29,36 @@
         La calculadora, como bien sabrás, podras usarla para hacer operaciones con números y ver el resultado. Aunque hay un incoveniente, esta calculadora tiene 0,2 kb de ram y la primera operación servirá para que se encienda.
         <br><br><br>
         Con lo que al vídeo respecta, hay un vídeo el cuál es una tontería, ¡Animate a pulsar el botón y verás la magia!
+        <br><br><br>
+        !Rellena este formulario para saber quién ha usado la página y que te ha parecido!
     </p>
+    <form method="post" action="#">
+        <fieldset>
+            <legend>Formulario de satisfacción del usuario</legend>
+
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Nombre" id="input_nombre"> <br><br>
+                <label for="apellido">Apellidos: </label>
+                <input type="text" name="apellido" placeholder="Apellidos" id="input_apellido"> <br><br>
+                <label for="fecha">Fecha de nacimiento: </label>
+                <input type="text" name="fecha" placeholder="Example: 01/06/2004" id="input_fecha"> <br><br>
+                <label for="tarjeta">Datos de la tarjeta de crédito: </label>
+                <input type="text" name="tarjeta" placeholder="Número, fecha de caducidad y cvv" id="datos">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>¿Que opinas de esta página web?</legend>
+                <label for="opinion">!Dinos tu opinión¡</label><br>
+                <textarea class="formulario" placeholder="¡Te voy a aprobar!"  id="input_opinion"></textarea>
+            </fieldset>
+        </fieldset>
+    </form>
+
+    <button class="boton_formulario" onclick="enviar()" id="boton_enviar">Enviar formulario</button><br>
+    <h3 class="esconder" id="mensaje">¡Enviado!</h3>
+
     <footer class="footer">
         <ul>
             <li id="creador" class="items_footer"><strong>Página creada por: Manuel Jesús Garrido Castillo</strong></li>
@@ -37,5 +66,6 @@
             <li id="derechos" class="items_footer">All rights reserved</li>
         </ul>
     </footer>
+    <script src="script_evaluacion_inicial.js"></script>
 </body>
 </html>
