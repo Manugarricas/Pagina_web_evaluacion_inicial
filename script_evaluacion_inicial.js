@@ -84,25 +84,20 @@ function hacerOperacion() {
 let pulsado = false;
 
 function enviar() {
+    document.getElementById("input_nombre").value = "";
+    document.getElementById("input_apellido").value = "";
+    document.getElementById("input_fecha").value = "";
+    document.getElementById("input_opinion").value = "";
+    document.getElementById("datos").value = "";
+
     if (!pulsado) {
         pulsado = true;
         document.getElementById("mensaje").classList = "enviado";
-        document.getElementById("input_nombre").value = "";
-        document.getElementById("input_apellido").value = "";
-        document.getElementById("input_fecha").value = "";
-        document.getElementById("input_opinion").value = "";
-        document.getElementById("datos").value = "";
     }
     else {
-        document.getElementById("mensaje").classList = "enviado";
-        document.getElementById("input_nombre").value = "";
-        document.getElementById("input_apellido").value = "";
-        document.getElementById("input_fecha").value = "";
-        document.getElementById("input_opinion").value = "";
-        document.getElementById("datos").value = "";
+
         document.getElementById("mensaje").innerHTML = "¡OYE QUE YA ME HAS PULSADO!";
     }
-    
 }
 
 //JAVASCRIPT PARA EL VIDEO
